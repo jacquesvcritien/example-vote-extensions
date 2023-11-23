@@ -1,0 +1,7 @@
+syntax = "proto3";
+package examplevess.examplevess;
+
+option go_package = "examplevess/x/examplevess/types";
+
+// Msg defines the Msg service.
+service Msg {}

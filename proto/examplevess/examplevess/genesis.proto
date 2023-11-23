@@ -1,0 +1,12 @@
+syntax = "proto3";
+package examplevess.examplevess;
+
+import "gogoproto/gogo.proto";
+import "examplevess/examplevess/params.proto";
+
+option go_package = "examplevess/x/examplevess/types";
+
+// GenesisState defines the examplevess module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
